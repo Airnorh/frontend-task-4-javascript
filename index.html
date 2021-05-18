@@ -4,30 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRONTEND TASK 4 NO 1 JAVASCRIPT</title>
+    <title>FRONTEND TASK 4 NO2</title>
 </head>
 <body>
     <script>
-        function convertFahrToCelsius(farenheit) {
-           if (isNaN(farenheit)) {
-              console.log(
-            `${farenheit} is not a valid number but a/an ${farenheit.constructor.name}`
-              );
+        function yugo(number) {
+            if (typeof number !== "number") {
+                console.log(`Invalid Parameter: ${number}`);
             } else {
-              let celsius = ((farenheit - 32) * 5) / 9;
-              roundedCelsius = celsius.toFixed(4);
-              console.log(`${roundedCelsius}`);
+                let digArr = [];
+                for (i = 1; i <= number; i++) {
+                    if (i % 30 === 0) {
+                     digArr.push("yu-gi-oh");
+                    } else if (i % 15 === 0) {
+                    digArr.push("gi-oh");
+                    } else if (i % 10 === 0) {
+                    digArr.push("yu-oh")
+                    } else if (i % 6 === 0)  {
+                    digArr.push("yu-gi");
+                    } else if (i % 5 === 0) {
+                    digArr.push("oh");
+                    } else if (i % 3 === 0) {
+                    digArr.push("gi");
+                    } else if (i % 2 === 0) {
+                    digArr.push("yu");
+                    } else {
+                    digArr.push(i);
+                    }
+                }
+                console.log(digArr);
+                return digArr;
             }
         }
+                yugo(" 'fizzbuzz is neh'");
+                yugo(100);
+                yugo(5);
 
-        convertFahrToCelsius("32");
-        convertFahrToCelsius(32);
-        convertFahrToCelsius(0);
-        convertFahrToCelsius("0")
-        convertFahrToCelsius([1,2,3]);
-        convertFahrToCelsius({ temp: 0});
-        convertFahrToCelsius("hey");
+                
     </script>
 </body>
-
 </html>
