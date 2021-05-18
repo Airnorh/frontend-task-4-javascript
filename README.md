@@ -1,2 +1,2 @@
 # frontend-task-4-javascript
-task 2 is javascript is located inside the index.html file
+task 1 and  2 javascript is inline and  located inside the index.html file
