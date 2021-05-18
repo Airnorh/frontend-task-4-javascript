@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRONTEND TASK 4 NO 1 JAVASCRIPT</title>
+</head>
+<body>
+    <script>
+        function convertFahrToCelsius(farenheit) {
+           if (isNaN(farenheit)) {
+              console.log(
+            `${farenheit} is not a valid number but a/an ${farenheit.constructor.name}`
+              );
+            } else {
+              let celsius = ((farenheit - 32) * 5) / 9;
+              roundedCelsius = celsius.toFixed(4);
+              console.log(`${roundedCelsius}`);
+            }
+        }
+
+        convertFahrToCelsius("32");
+        convertFahrToCelsius(32);
+        convertFahrToCelsius(0);
+        convertFahrToCelsius("0")
+        convertFahrToCelsius([1,2,3]);
+        convertFahrToCelsius({ temp: 0});
+        convertFahrToCelsius("hey");
+    </script>
+</body>
+
+</html>
